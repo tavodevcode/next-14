@@ -1,8 +1,8 @@
 // Loading animation
 const shimmer =
-  'before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent';
+  'before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent'
 
-export function CardSkeleton() {
+export function CardSkeleton (): React.ReactElement {
   return (
     <div
       className={`${shimmer} relative overflow-hidden rounded-xl bg-gray-100 p-2 shadow-sm`}
@@ -15,10 +15,10 @@ export function CardSkeleton() {
         <div className="h-7 w-20 rounded-md bg-gray-200" />
       </div>
     </div>
-  );
+  )
 }
 
-export function CardsSkeleton() {
+export function CardsSkeleton (): React.ReactElement {
   return (
     <>
       <CardSkeleton />
@@ -26,10 +26,10 @@ export function CardsSkeleton() {
       <CardSkeleton />
       <CardSkeleton />
     </>
-  );
+  )
 }
 
-export function RevenueChartSkeleton() {
+export function RevenueChartSkeleton (): React.ReactElement {
   return (
     <div className={`${shimmer} relative w-full overflow-hidden md:col-span-4`}>
       <div className="mb-4 h-8 w-36 rounded-md bg-gray-100" />
@@ -41,10 +41,10 @@ export function RevenueChartSkeleton() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export function InvoiceSkeleton() {
+export function InvoiceSkeleton (): React.ReactElement {
   return (
     <div className="flex flex-row items-center justify-between border-b border-gray-100 py-4">
       <div className="flex items-center">
@@ -56,10 +56,10 @@ export function InvoiceSkeleton() {
       </div>
       <div className="mt-2 h-4 w-12 rounded-md bg-gray-200" />
     </div>
-  );
+  )
 }
 
-export function LatestInvoicesSkeleton() {
+export function LatestInvoicesSkeleton (): React.ReactElement {
   return (
     <div
       className={`${shimmer} relative flex w-full flex-col overflow-hidden md:col-span-4 lg:col-span-4`}
@@ -79,10 +79,10 @@ export function LatestInvoicesSkeleton() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default function DashboardSkeleton() {
+export default function DashboardSkeleton (): React.ReactElement {
   return (
     <>
       <div
@@ -99,10 +99,10 @@ export default function DashboardSkeleton() {
         <LatestInvoicesSkeleton />
       </div>
     </>
-  );
+  )
 }
 
-export function TableRowSkeleton() {
+export function TableRowSkeleton (): React.ReactElement {
   return (
     <tr className="w-full border-b border-gray-100 last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg">
       {/* Customer Name and Image */}
@@ -136,10 +136,10 @@ export function TableRowSkeleton() {
         </div>
       </td>
     </tr>
-  );
+  )
 }
 
-export function InvoicesMobileSkeleton() {
+export function InvoicesMobileSkeleton (): React.ReactElement {
   return (
     <div className="mb-2 w-full rounded-md bg-white p-4">
       <div className="flex items-center justify-between border-b border-gray-100 pb-8">
@@ -160,10 +160,10 @@ export function InvoicesMobileSkeleton() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export function InvoicesTableSkeleton() {
+export function InvoicesTableSkeleton (): React.ReactElement {
   return (
     <div className="mt-6 flow-root">
       <div className="inline-block min-w-full align-middle">
@@ -214,5 +214,5 @@ export function InvoicesTableSkeleton() {
         </div>
       </div>
     </div>
-  );
+  )
 }
